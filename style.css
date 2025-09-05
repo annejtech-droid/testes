@@ -1,0 +1,285 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff0f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* =================== ANIMAÇÕES GERAIS =================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* =================== CABEÇALHO E MENU =================== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #ff6f91;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe4e1;
+            transform: scale(1.1);
+        }
+
+        /* Botão menu mobile */
+        .menu-btn {
+            display: none;
+            font-size: 26px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* =================== SEÇÃO INÍCIO =================== */
+        #inicio {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1200x800/?nails,beauty') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        #inicio h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        #inicio p {
+            font-size: 1.3rem;
+            max-width: 650px;
+            animation: fadeInUp 1.6s ease-in-out;
+        }
+
+        /* =================== SEÇÃO SOBRE =================== */
+        #sobre {
+            padding: 100px 10%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        #sobre img {
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        #sobre div {
+            width: 50%;
+            animation: fadeInUp 1.8s ease-in-out;
+        }
+
+        #sobre h2 {
+            color: #ff6f91;
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        #sobre p {
+            font-size: 1.1rem;
+        }
+
+        /* =================== SEÇÃO TRABALHOS =================== */
+        #trabalhos {
+            padding: 100px 10%;
+            background-color: #fff0f5;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        #trabalhos h2 {
+            margin-bottom: 25px;
+            color: #ff6f91;
+            font-size: 2rem;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.08);
+        }
+
+        /* =================== SEÇÃO FALE CONOSCO =================== */
+        #contato {
+            padding: 100px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #contato h2 {
+            color: #ff6f91;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto 30px auto;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        form input, form textarea, form button {
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #25D366;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        form button:hover {
+            background-color: #1ebe5d;
+            transform: scale(1.05);
+        }
+
+        /* MAPA INTEGRADO */
+        iframe {
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+        }
+
+        /* =================== BOTÃO WHATSAPP FLUTUANTE =================== */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            padding: 14px 18px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out, background 0.3s;
+            z-index: 1000;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            background-color: #1ebe5d;
+        }
+
+        /* =================== RESPONSIVIDADE =================== */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #ff6f91;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                width: 200px;
+                padding: 15px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                border-radius: 0 0 10px 10px;
+            }
+
+            nav ul.active {
+                display: flex;
+                animation: fadeIn 0.5s ease-in-out;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            #sobre {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #sobre img, #sobre div {
+                width: 100%;
+            }
+        }
+    
+
