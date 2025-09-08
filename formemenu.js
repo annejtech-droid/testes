@@ -12,12 +12,11 @@
             e.preventDefault();
 
             const nome = document.getElementById('nome').value;
-            const email = document.getElementById('email').value;
             const mensagem = document.getElementById('mensagem').value;
 
-            const telefone = "5599999999999"; // Substitua pelo número real
-            const texto = encodeURIComponent(`Olá! Meu nome é ${nome}.\nMeu e-mail é: ${email}.\nMensagem: ${mensagem}`);
+            const telefone = "5579999450473"; // Substitua pelo número real
+            const texto = encodeURIComponent(`Olá! Meu nome é ${nome}.\n.\nMensagem: ${mensagem}`);
 
-            window.open(`https://wa.me/${telefone}?text=${texto}`, '_blank');
+            window.open(`https://api.whatsapp.com/send?phone=5579999450473&text=Ol%C3%A1%20gostaria%20de%20agendar${5579999450473}?text=${texto}`, '_blank');
         });
 

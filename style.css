@@ -69,7 +69,7 @@
         }
 
         nav ul li a:hover {
-            color: #ffe4e1;
+            color: #cfaeab;
             transform: scale(1.1);
         }
 
@@ -80,11 +80,12 @@
             color: #fff;
             cursor: pointer;
         }
-
+        main #inicio{
+        background-color: rgb(253, 204, 204);
+       }
         /* =================== SEÇÃO INÍCIO =================== */
         #inicio {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://source.unsplash.com/1200x800/?nails,beauty') center/cover no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -137,7 +138,55 @@
 
         #sobre p {
             font-size: 1.1rem;
-        }
+
+      }
+
+      #navigation
+      a:link {  
+       text-decoration: none;
+       color:#ff6f91 ;
+       font-size: 25px;
+      }
+
+  /* SERVIÇOS */
+       #servicos {
+           padding: 100px 10%;
+           background-color: #fff0f5;
+           text-align: center;
+           animation: fadeIn 1.5s ease-in-out;
+       }
+
+       #servicos h2 {
+           color: #ff6f91;
+           margin-bottom: 30px;
+           font-size: 2rem;
+       }
+
+       .cards-servicos {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+           gap: 20px;
+       }
+
+       .card {
+           background: #fff;
+           padding: 25px;
+           border-radius: 15px;
+           box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+           transition: transform 0.3s ease-in-out;
+           cursor: pointer;
+           animation: fadeInUp 1.2s ease-in-out;
+       }
+
+       .card:hover {
+           transform: scale(1.05);
+       }
+
+       .card h3 {
+           color: #ff6f91;
+           font-size: 1.2rem;
+           margin-bottom: 10px;
+       }
 
         /* =================== SEÇÃO TRABALHOS =================== */
         #trabalhos {
@@ -280,6 +329,11 @@
             #sobre img, #sobre div {
                 width: 100%;
             }
+        }
+
+        footer{
+            background-color: #ff6f91;
+            
         }
     
 
