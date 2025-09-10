@@ -39,7 +39,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 10%;
-            background-color: #ff6f91;
+            background-color:#88004b;
             box-shadow: 0 2px 15px rgba(0,0,0,0.2);
             position: fixed;
             width: 100%;
@@ -81,7 +81,7 @@
             cursor: pointer;
         }
         main #inicio{
-        background-color: rgb(253, 204, 204);
+        background-color: #b179985e;
        }
         /* =================== SEÇÃO INÍCIO =================== */
         #inicio {
@@ -91,9 +91,9 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            color: #fff;
+            color: #88004b; 
             padding: 20px;
-            animation: fadeIn 1.5s ease-in-out;
+           
         }
 
         #inicio h2 {
@@ -107,8 +107,21 @@
             max-width: 650px;
             animation: fadeInUp 1.6s ease-in-out;
         }
-
-        /* =================== SEÇÃO SOBRE =================== */
+       #inicio button{
+        background-color: #88004b;
+            color: #fff;
+            padding: 14px;
+            border-radius: 20px;
+            border: 1px ;
+            font-size: 1rem;
+        }
+       #inicio a:link {
+        text-decoration: none;
+        color: #ddd;
+    
+       }
+       
+        /*  SEÇÃO SOBRE  */
         #sobre {
             padding: 100px 10%;
             background-color: #fff;
@@ -121,7 +134,7 @@
         #sobre img {
             width: 45%;
             border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 20px #00000026;
             animation: fadeInUp 1.5s ease-in-out;
         }
 
@@ -131,7 +144,7 @@
         }
 
         #sobre h2 {
-            color: #ff6f91;
+            color: #88004b;
             margin-bottom: 15px;
             font-size: 2rem;
         }
@@ -141,12 +154,6 @@
 
       }
 
-      #navigation
-      a:link {  
-       text-decoration: none;
-       color:#ff6f91 ;
-       font-size: 25px;
-      }
 
   /* SERVIÇOS */
        #servicos {
@@ -157,13 +164,13 @@
        }
 
        #servicos h2 {
-           color: #ff6f91;
+           color: #88004b;
            margin-bottom: 30px;
            font-size: 2rem;
        }
 
        .cards-servicos {
-           display: grid;
+           display:grid;
            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
            gap: 20px;
        }
@@ -172,7 +179,7 @@
            background: #fff;
            padding: 25px;
            border-radius: 15px;
-           box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+           box-shadow: 0 5px 15px;
            transition: transform 0.3s ease-in-out;
            cursor: pointer;
            animation: fadeInUp 1.2s ease-in-out;
@@ -183,7 +190,7 @@
        }
 
        .card h3 {
-           color: #ff6f91;
+           color: #88004b;
            font-size: 1.2rem;
            margin-bottom: 10px;
        }
@@ -198,7 +205,7 @@
 
         #trabalhos h2 {
             margin-bottom: 25px;
-            color: #ff6f91;
+            color: #88004b;
             font-size: 2rem;
         }
 
@@ -213,7 +220,7 @@
             height: 260px;
             object-fit: cover;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 15px #00000026;
             transition: transform 0.4s ease-in-out;
         }
 
@@ -229,7 +236,7 @@
         }
 
         #contato h2 {
-            color: #ff6f91;
+            color: #88004b;
             margin-bottom: 20px;
             font-size: 2rem;
         }
@@ -251,7 +258,7 @@
         }
 
         form button {
-            background-color: #25D366;
+            background-color: #88004b;
             color: #fff;
             cursor: pointer;
             border: none;
@@ -263,16 +270,6 @@
             transform: scale(1.05);
         }
 
-        /* MAPA INTEGRADO */
-        iframe {
-            margin-top: 20px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-            width: 100%;
-            max-width: 600px;
-            height: 300px;
-        }
-
         /* =================== BOTÃO WHATSAPP FLUTUANTE =================== */
         .whatsapp-btn {
             position: fixed;
@@ -282,7 +279,7 @@
             color: #fff;
             padding: 14px 18px;
             border-radius: 50%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px #0000004d;
             font-size: 24px;
             text-decoration: none;
             display: flex;
@@ -308,7 +305,7 @@
                 right: 0;
                 width: 200px;
                 padding: 15px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                box-shadow: 0 5px 15px #0000004d;
                 border-radius: 0 0 10px 10px;
             }
 
@@ -335,5 +332,47 @@
             background-color: #ff6f91;
             
         }
+       /* ======== FOOTER ======== */
+        footer {
+            background:#88004b;
+            color: #fff;
+            padding: 30px 10%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .social-links {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: #fff;
+            background: #ff69b4;
+            padding: 10px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #ff85c1;
+            transform: scale(1.1);
+        }
+
+/* =================== RESPONSIVIDADE =================== */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
     
 
