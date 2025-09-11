@@ -6,7 +6,7 @@
         }
 
         body {
-            background-color: #fff0f5;
+            background-color: #f5e9e8;
             color: #333;
             line-height: 1.6;
             overflow-x: hidden;
@@ -39,8 +39,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 10%;
-            background-color:#88004b;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            background-color:#d6a5b0;
+            box-shadow: 0 2px 15px #00000033;
             position: fixed;
             width: 100%;
             top: 0;
@@ -69,7 +69,7 @@
         }
 
         nav ul li a:hover {
-            color: #cfaeab;
+            color: #f5e9e8;
             transform: scale(1.1);
         }
 
@@ -81,7 +81,7 @@
             cursor: pointer;
         }
         main #inicio{
-        background-color: #b179985e;
+        background-color: #f5e9e8;
        }
         /* =================== SEÇÃO INÍCIO =================== */
         #inicio {
@@ -91,8 +91,8 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            color: #88004b; 
-            padding: 20px;
+            color: #9d8563; 
+            padding: 20px;;
            
         }
 
@@ -108,7 +108,7 @@
             animation: fadeInUp 1.6s ease-in-out;
         }
        #inicio button{
-        background-color: #88004b;
+        background-color: #9d8563;
             color: #fff;
             padding: 14px;
             border-radius: 20px;
@@ -144,7 +144,7 @@
         }
 
         #sobre h2 {
-            color: #88004b;
+            color: #d6a5b0;
             margin-bottom: 15px;
             font-size: 2rem;
         }
@@ -158,13 +158,13 @@
   /* SERVIÇOS */
        #servicos {
            padding: 100px 10%;
-           background-color: #fff0f5;
+           background-color: #f5e9e8;
            text-align: center;
            animation: fadeIn 1.5s ease-in-out;
        }
 
        #servicos h2 {
-           color: #88004b;
+           color: #9d8563;
            margin-bottom: 30px;
            font-size: 2rem;
        }
@@ -179,7 +179,7 @@
            background: #fff;
            padding: 25px;
            border-radius: 15px;
-           box-shadow: 0 5px 15px;
+           box-shadow: 0 1px 2px;
            transition: transform 0.3s ease-in-out;
            cursor: pointer;
            animation: fadeInUp 1.2s ease-in-out;
@@ -190,7 +190,7 @@
        }
 
        .card h3 {
-           color: #88004b;
+           color: #9d8563;
            font-size: 1.2rem;
            margin-bottom: 10px;
        }
@@ -198,14 +198,14 @@
         /* =================== SEÇÃO TRABALHOS =================== */
         #trabalhos {
             padding: 100px 10%;
-            background-color: #fff0f5;
+            background-color: #f5e9e8;
             text-align: center;
             animation: fadeIn 1.5s ease-in-out;
         }
 
         #trabalhos h2 {
             margin-bottom: 25px;
-            color: #88004b;
+            color: #9d8563;
             font-size: 2rem;
         }
 
@@ -236,7 +236,7 @@
         }
 
         #contato h2 {
-            color: #88004b;
+            color: #9d8563;
             margin-bottom: 20px;
             font-size: 2rem;
         }
@@ -258,7 +258,7 @@
         }
 
         form button {
-            background-color: #88004b;
+            background-color: #d6a5b0;
             color: #fff;
             cursor: pointer;
             border: none;
@@ -299,7 +299,7 @@
             nav ul {
                 display: none;
                 flex-direction: column;
-                background-color: #ff6f91;
+                background-color: #d6a5b0;
                 position: absolute;
                 top: 70px;
                 right: 0;
@@ -328,13 +328,9 @@
             }
         }
 
-        footer{
-            background-color: #ff6f91;
-            
-        }
        /* ======== FOOTER ======== */
         footer {
-            background:#88004b;
+            background:#d6a5b0;
             color: #fff;
             padding: 30px 10%;
             text-align: center;
@@ -350,14 +346,14 @@
 
         .social-links a {
             color: #fff;
-            background: #ff69b4;
+            background: #9d8563;
             padding: 10px;
             border-radius: 50%;
             transition: 0.3s;
         }
 
         .social-links a:hover {
-            background: #ff85c1;
+            background: #9d8569;
             transform: scale(1.1);
         }
 
